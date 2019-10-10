@@ -1,6 +1,0 @@
-Django==2.2.6
-djangorestframework
-markdown
-django-filter
-sphinx
-whitenoise
