@@ -27,9 +27,22 @@ def signup(request):
 
 
 @login_required
-def secret_page(request):
+def Add_device(request):
     return render(request, 'secret_page.html')
 
+def Device_list(request):
+    return render(request, 'secret_page.html')
 
-class SecretPage(LoginRequiredMixin, TemplateView):
+def Data_list(request):
+    return render(request, 'secret_page.html')
+
+def Key_manager(request):
+    return render(request, 'secret_page.html')
+
+class Device_list(LoginRequiredMixin, TemplateView):
     template_name = 'secret_page.html'
+
+class Key_manager(LoginRequiredMixin, TemplateView):
+    template_name = 'secret_page.html'
+
+
