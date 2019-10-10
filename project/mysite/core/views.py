@@ -28,7 +28,7 @@ def signup(request):
 
 @login_required
 def Add_device(request):
-    return render(request, 'secret_page.html')
+    return render(request, 'add.html')
 
 def Device_list(request):
     return render(request, 'secret_page.html')
