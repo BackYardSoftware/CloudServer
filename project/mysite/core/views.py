@@ -30,19 +30,9 @@ def signup(request):
 def Add_device(request):
     return render(request, 'add.html')
 
-def Device_list(request):
+def Devices_data(request):
     return render(request, 'secret_page.html')
 
-def Data_list(request):
+def Home(request):
     return render(request, 'secret_page.html')
-
-def Key_manager(request):
-    return render(request, 'secret_page.html')
-
-class Device_list(LoginRequiredMixin, TemplateView):
-    template_name = 'secret_page.html'
-
-class Key_manager(LoginRequiredMixin, TemplateView):
-    template_name = 'secret_page.html'
-
 
