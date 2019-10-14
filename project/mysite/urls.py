@@ -1,18 +1,18 @@
 from django.contrib import admin
 from django.urls import path, include
-
+from devices import views as devices
 from mysite.core import views
 
 
 urlpatterns = [
     path('', views.home, name='home'),
     path('signup/', views.signup, name='signup'),
-    path('Home/', views.Home, name='Home'),
+    
 
     # add device
-    path('Add_device/', views.Add_device, name='Add_device'),
+    path('Add_device/', devices.device_add, name='Add_device'),
+    path('Devices_list/', devices.device_list, name='device_list'),
 
-    path('Devices_data/', views.Devices_data, name='Devices_data'),
     path('accounts/', include('django.contrib.auth.urls')),
 
     # django admin page

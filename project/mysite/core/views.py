@@ -31,8 +31,5 @@ def Add_device(request):
     return render(request, 'add.html')
 
 def Devices_data(request):
-    return render(request, 'secret_page.html')
-
-def Home(request):
-    return render(request, 'secret_page.html')
+    return render(request, 'device_list.html')
 

@@ -30,14 +30,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           {% if user.is_authenticated %}
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'Home' %}">Home</a>
-          </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'Add_device' %}">Add Device</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'Devices_data' %}">Device List</a>
+              <a class="nav-link" href="{% url 'device_list' %}">Device List</a>
             </li>
           
           {% endif %}
